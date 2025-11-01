@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block title %}Project - My Portfolio{% endblock %}
+{% block content %}
+ <section id="resume" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-uppercase mb-3">Resume</h2>
+      <p class="text-muted fs-5">
+        Passionate MCA student skilled in full-stack development, AI chatbots, and data-driven web applications.
+      </p>
+    </div>
+
+    <div class="row gy-5">
+      <!-- Left Column -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <h3 class="fw-semibold mb-3 text-primary">Summary</h3>
+        <h5 class="fw-bold">Anita Pralhad Koli</h5>
+        <p class="text-muted">
+          MCA student at Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon.
+          Enthusiastic developer with experience in AI-based projects, web app development, and backend technologies.
+        </p>
+        <ul class="list-unstyled mb-4">
+          <li><i class="bi bi-geo-alt text-primary me-2"></i> Jalgaon, Maharashtra, India</li>
+          <li><i class="bi bi-telephone text-primary me-2"></i> +91 8208784700</li>
+          <li><i class="bi bi-envelope text-primary me-2"></i> kolianita784@gmail.com</li>
+          <li>
+            <i class="bi bi-linkedin text-primary me-2"></i>
+            <a href="https://www.linkedin.com/in/anita-koli-a0a9b722a" target="_blank" class="text-decoration-none text-dark">
+              linkedin.com/in/anita-koli-a0a9b722a
+            </a>
+          </li>
+        </ul>
+
+        <h3 class="fw-semibold mb-3 text-primary">Education</h3>
+        <div class="mb-3">
+          <h6 class="fw-bold mb-0">Master of Computer Applications (MCA)</h6>
+          <small class="text-muted">K.B.C. North Maharashtra University, Jalgaon | 2024 – Present</small>
+        </div>
+        <div>
+          <h6 class="fw-bold mb-0">Bachelor of Science in Computer Science</h6>
+          <small class="text-muted">K.B.C. North Maharashtra University, Jalgaon | 2021 – 2024 | 85.59%</small>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <h3 class="fw-semibold mb-3 text-primary">Projects</h3>
+
+        <div class="mb-4">
+          <h6 class="fw-bold">🧠 Recipe Generator Chatbot</h6>
+          <p class="text-muted mb-1">Flask | Gemini API | Bootstrap</p>
+          <p>AI chatbot that suggests recipes based on ingredients using Gemini AI API and Flask backend.</p>
+          <a href="https://github.com/kolianita22/Ai-Weekend-project-recipeAi" target="_blank" class="btn btn-outline-primary btn-sm">
+            <i class="bi bi-github me-1"></i> View Project
+          </a>
+        </div>
+
+        <div class="mb-4">
+          <h6 class="fw-bold">🎵 Music API Integration App</h6>
+          <p class="text-muted mb-1">Angular | Spotify API</p>
+          <p>Music web app that fetches and plays songs dynamically using a public API.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm disabled">
+            <i class="bi bi-github me-1"></i> Coming Soon
+          </a>
+        </div>
+
+        <div class="mb-4">
+          <h6 class="fw-bold">⚙️ Web App with Classification Model</h6>
+          <p class="text-muted mb-1">Flask | ML Model</p>
+          <p>Machine learning-based web app for classifying user input or uploaded data.</p>
+          <a href="https://github.com/kolianita22/flask_titanic_app" target="_blank" class="btn btn-outline-primary btn-sm">
+            <i class="bi bi-github me-1"></i> View Project
+          </a>
+        </div>
+
+        <h3 class="fw-semibold mb-3 text-primary">Technical Skills</h3>
+        <ul class="list-unstyled">
+          <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap, Angular</li>
+          <li><strong>Backend:</strong> Python (Flask), Node.js, Express.js</li>
+          <li><strong>Database:</strong> MySQL, MongoDB</li>
+          <li><strong>Languages:</strong> Java, Python (Data Structures)</li>
+          <li><strong>Tools:</strong> Git, VS Code, Docker</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

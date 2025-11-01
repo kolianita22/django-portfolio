@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block title %}About - My Portfolio{% endblock %}
+{% block content %}
+ <!-- ======= Skills Section ======= -->
+
+<div class="container py-5">
+  <div class="d-flex flex-column align-items-center text-center">
+    <!-- Icon Circle -->
+    <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow mb-4" style="width: 70px; height: 70px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M2.25 4.125c0-1.036.84-1.875 1.875-1.875h5.25c1.036 0 1.875.84 1.875 1.875V17.25a4.5 4.5 0 11-9 0V4.125zm4.5 14.25a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" clip-rule="evenodd"></path>
+        <path d="M10.719 21.75h9.156c1.036 0 1.875-.84 1.875-1.875v-5.25c0-1.036-.84-1.875-1.875-1.875h-.14l-8.742 8.743c-.09.089-.18.175-.274.257zM12.738 17.625l6.474-6.474a1.875 1.875 0 000-2.651L15.5 4.787a1.875 1.875 0 00-2.651 0l-.1.099V17.25c0 .126-.003.251-.01.375z"></path>
+      </svg>
+    </div>
+
+    <!-- Title -->
+    <h5 class="fw-semibold mb-3 text-primary">Technology Stack</h5>
+
+    <!-- Description -->
+    <p class="text-secondary px-4" style="max-width: 600px;">
+      I'm well-versed in the industry's most popular frontend technologies, including 
+      <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>, and frameworks like 
+      <strong>Angular</strong> and <strong>Bootstrap</strong>.
+    </p>
+  </div>
+</div>
+
+
+<!-- Optional Hover Effect -->
+<style>
+  #skills-overview .col-md-4:hover {
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+</style>
+
+<div class="container py-5">
+  <div class="row justify-content-center text-center g-4">
+
+    <!-- Frontend Web Development -->
+    <div class="col-md-4">
+      <div class="p-4 border rounded-4 shadow-sm d-flex flex-column align-items-center h-100">
+        <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow mb-4" style="width:70px; height:70px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M1.5 7.125c0-1.036.84-1.875 1.875-1.875h6c1.036 0 1.875.84 1.875 1.875v3.75c0 1.036-.84 1.875-1.875 1.875h-6A1.875 1.875 0 011.5 10.875v-3.75zm12 1.5c0-1.036.84-1.875 1.875-1.875h5.25c1.035 0 1.875.84 1.875 1.875v8.25c0 1.035-.84 1.875-1.875 1.875h-5.25a1.875 1.875 0 01-1.875-1.875v-8.25zM3 16.125c0-1.036.84-1.875 1.875-1.875h5.25c1.036 0 1.875.84 1.875 1.875v2.25c0 1.035-.84 1.875-1.875 1.875h-5.25A1.875 1.875 0 013 18.375v-2.25z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <h5 class="fw-semibold text-dark mb-2">Frontend Web Development</h5>
+        <p class="text-muted px-3">
+          Creating beautiful and functional web experiences is my forte. Using HTML5, CSS3, JavaScript, Bootstrap, and Angular, I build responsive and engaging user interfaces.
+        </p>
+      </div>
+    </div>
+
+    <!-- Backend Development -->
+    <div class="col-md-4">
+      <div class="p-4 border rounded-4 shadow-sm d-flex flex-column align-items-center h-100">
+        <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow mb-4" style="width:70px; height:70px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M2.25 4.125c0-1.036.84-1.875 1.875-1.875h5.25c1.036 0 1.875.84 1.875 1.875V17.25a4.5 4.5 0 11-9 0V4.125zm4.5 14.25a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" clip-rule="evenodd"></path>
+            <path d="M10.719 21.75h9.156c1.036 0 1.875-.84 1.875-1.875v-5.25c0-1.036-.84-1.875-1.875-1.875h-.14l-8.742 8.743c-.09.089-.18.175-.274.257zM12.738 17.625l6.474-6.474a1.875 1.875 0 000-2.651L15.5 4.787a1.875 1.875 0 00-2.651 0l-.1.099V17.25c0 .126-.003.251-.01.375z"></path>
+          </svg>
+        </div>
+        <h5 class="fw-semibold text-dark mb-2">Backend Development</h5>
+        <p class="text-muted px-3">
+          Experienced with Django, Flask, and Node.js. Skilled in creating APIs, integrating databases (MySQL, MongoDB), and building efficient, scalable backend systems.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tools & Programming -->
+    <div class="col-md-4">
+      <div class="p-4 border rounded-4 shadow-sm d-flex flex-column align-items-center h-100">
+        <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow mb-4" style="width:70px; height:70px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M4.5 3A1.5 1.5 0 003 4.5v15A1.5 1.5 0 004.5 21h15a1.5 1.5 0 001.5-1.5v-15A1.5 1.5 0 0019.5 3h-15zM6 8.25a.75.75 0 011.5 0V9h9v-.75a.75.75 0 011.5 0v.75h.75a.75.75 0 010 1.5h-.75v9h.75a.75.75 0 010 1.5h-.75v.75a.75.75 0 01-1.5 0v-.75h-9v.75a.75.75 0 01-1.5 0v-.75H5.25a.75.75 0 010-1.5H6v-9h-.75a.75.75 0 010-1.5H6v-.75z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <h5 class="fw-semibold text-dark mb-2">Programming & Tools</h5>
+        <p class="text-muted px-3">
+          Proficient in Java and Python with strong knowledge of Data Structures and Algorithms. Experienced in Git, VS Code, and modern development workflows.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+{% endblock %}
