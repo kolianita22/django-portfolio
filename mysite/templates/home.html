@@ -1,24 +1,102 @@
 {% extends 'base.html' %}
-{% block title %}Home - My Portfolio{% endblock %}
+{% block title %}Home - Anita Portfolio{% endblock %}
+
 {% block content %}
-  <main class="main">
+<main class="main">
 
-    <section id="hero" class="hero section">
+  <section class="hero-section d-flex align-items-center position-relative text-center">
+    
+    <div class="spotlight spotlight-left"></div>
+    <div class="spotlight spotlight-right"></div>
+    <div class="spotlight spotlight-center"></div>
 
-      <img src="" alt="" data-aos="fade-in" class="aos-init aos-animate">
+    <div class="container position-relative z-index-2 pt-5">
+      
+      <h5 class="text-uppercase mb-3" style="font-weight: 800; color: #555;">HI!</h5>
 
-      <div class="container text-center aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Anita Koli</h2>
-            <p>I'm a Passionate About Web Development</p>
-           
-            <a href="/about" class="btn-get-started">About Me</a>
-          </div>
-        </div>
+      <h1 class="display-1 fw-bolder mb-0" style="color: #444; font-size: 5rem;">
+        I am Anita 
+      </h1>
+       <h1 class="display-1 fw-bolder mb-4" style="color: #444; font-size: 5rem;">
+        <span class="hand-wave">👋</span>
+      </h1>
+
+      <h2 class="stroke-text text-uppercase mb-5">
+        Python Developer
+      </h2>
+
+      <div class="mt-4">
+        <a href="/project" class="btn btn-custom btn-lg rounded-pill px-5 py-2">
+          Visit My Works
+        </a>
       </div>
+      
+    </div>
+  </section>
 
-    </section>
+  <style>
+    /* --- HERO BACKGROUND & SPOTLIGHTS --- */
+    .hero-section {
+      min-height: 100vh; /* Takes full viewport height */
+      padding-top: 100px; 
+      overflow: hidden;
+      /* Base purple gradient from the top */
+      background: linear-gradient(180deg, #eef0fa 0%, #ffffff 100%); 
+    }
 
-  </main>
+    /* The main spotlight effect */
+    .spotlight {
+      position: absolute;
+      top: -100px;
+      width: 450px; /* Reduced size for better blending */
+      height: 450px;
+      /* Soft purple glow */
+      background: radial-gradient(circle, rgba(140, 100, 200, 0.1) 0%, rgba(255, 255, 255, 0) 70%); 
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+      filter: blur(5px);
+    }
+    /* Positioning the three lights as seen in the target image */
+    .spotlight-left { left: 5%; }
+    .spotlight-right { right: 5%; }
+    .spotlight-center { left: 50%; transform: translateX(-50%); }
+
+    /* --- TYPOGRAPHY --- */
+    
+    /* THE OUTLINE TEXT EFFECT */
+    .stroke-text {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5rem; /* Smaller, uppercase text for the job title */
+      font-weight: 700;
+      letter-spacing: 5px; /* Widely spaced */
+      color: transparent; /* Make fill transparent */
+      -webkit-text-stroke: 1.5px #a0a0a0; /* Grey outline */
+      text-stroke: 1.5px #a0a0a0; 
+      margin-top: -10px; /* Bring it closer to the name */
+    }
+
+    /* --- BUTTON --- */
+    .btn-custom {
+      background-color: #6f42c1; /* Purple */
+      border: 1px solid #6f42c1;
+      color: white;
+      font-weight: 500;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #59359a;
+      border-color: #59359a;
+      color: white;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .display-1 { font-size: 3rem !important; }
+        .stroke-text { font-size: 1rem; letter-spacing: 3px; }
+    }
+  </style>
+
+</main>
 {% endblock %}
